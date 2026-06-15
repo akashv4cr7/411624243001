@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Website</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        padding:20px;
+    }
+
+    
+    nav{
+        display:flex;
+        flex-direction:column;
+        background-color:hsla(190, 7%, 83%, 0.968);
+        padding:10px;
+    }
+
+    nav a{
+        text-decoration:none;
+        color:rgb(134, 12, 14);
+        padding:10px;
+    }
+
+    
+    @media (min-width:768px){
+        nav{
+            flex-direction:row;
+            gap:30px;
+        }
+    }
+
+    h1{
+        margin:20px 0;
+    }
+
+    
+    img{
+        width:300px;
+        max-width:100%;
+        border-radius:50px; 
+        display:block;
+        margin-bottom:20px;
+    }
+
+    
+    video{
+        width:50vw;
+        background-color:rgba(255, 0, 238, 0.812);
+        padding:15px;
+        display:block;
+        margin-bottom:20px;
+    }
+
+    
+    table{
+        width:100%;
+        border-collapse:collapse;
+        margin-bottom:20px;
+    }
+
+    th, td{
+        border:1px solid black;
+        padding:10px;
+        text-align:center;
+    }
+
+    th{
+        background-color:hsla(0, 0%, 87%, 0.969);
+    }
+
+    
+    button{
+        border:none;
+        padding:12px 25px;
+        background-color:rgba(0, 0, 255, 0.899);
+        color:white;
+        cursor:pointer;
+        margin:20px 0;
+        transition:0.3s;
+    }
+
+    button:hover{
+        opacity:0.8;
+        transform:scale(1.05);
+    }
+
+    
+    .grid-container{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:10px;
+        margin-top:20px;
+    }
+
+    .grid-item{
+        background:#33bfc699;
+        padding:30px;
+        text-align:center;
+        font-size:20px;
+    }
+
+    
+    @media (max-width:767px){
+        .grid-container{
+            grid-template-columns:repeat(2,1fr);
+        }
+    }
+</style>
+</head>
+<body>
+
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    
+    <h1>Responsive Website</h1>
+
+    
+    <img src="C:\Users\akash\Downloads\aiimages.jpeg">
+
+    
+    <video controls>
+        <source src="C:\Users\akash\Downloads\Pushpa 2 The Rule (2024)[Tamil - 1080p HQ HDRip - x264 - AAC - 3.3GB].mkv">
+        
+    </video>
+
+    
+    <table>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>Some Text</td>
+            <td>Some Text</td>
+            <td>Some Text</td>
+        </tr>
+        <tr>
+            <td>Some Text</td>
+            <td>Some Text</td>
+            <td>Some Text</td>
+        </tr>
+    </table>
+
+    
+    <button>Click Me</button>
+
+    
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+    </div>
+
+</body>
+</html>
+

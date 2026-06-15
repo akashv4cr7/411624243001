@@ -1,0 +1,21 @@
+body{
+    color:rgb(255, 132, 0);
+    background-color:rgb(128, 0, 55);
+    font-family:'Times now Roman',Times,serif;
+}
+img{
+    height:700px;
+    width:700px;
+    border-radius:100x;
+
+}
+ol{
+    list-style-type:lower-roman;
+}
+table{
+    border:1px solid greenyellow;
+    border-collapse:collapse;
+}
+button:hover{
+    background-color:rgb(205, 177, 50);
+}
